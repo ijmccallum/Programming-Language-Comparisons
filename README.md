@@ -7,7 +7,11 @@ I'm a ~~Javascript~~ Typescript guy with a light-touch smattering of experiences
 
 **How - what's the plan?**
 
-To start: for each of the top n languages (popular/important / historic), map out how they do the fundamentals; handle data (variables, types, scope), and instructions (loops, branches, functions).
+To start: for each of the top n languages (popular/important/historic):
+ - Do a teeny write-up to give context around what the language is intended for.
+ - Map out how the fundamentals are done:
+   - data handling (variables, types, scope)
+   - instructions (loops, branches, functions)
 
 After that: don't know! a few options to look into next could be concurrency/parallelism, memory management, error handling, performance, readability, or ecosystem (tooling/community/devX).
 
@@ -48,4 +52,18 @@ Go _____________(2009) ... (2024)
 Julia __________(2009) ... (2024)  
 Elixir _________(2012) ... (2024)  
 Swift __________(2014) ... (2023)  
+```
+
+## Teeny intro write-ups for context
+
+### Assembly (Skipping this in further on steps but doing a wee write-up for funsies)
+
+(an) Assembly lamguage -> machine code -> Computer Architecture - all three are fairly tied together.
+
+```
+ARM: used on many cell phones and embedded systems
+MIPS: IBM CPUs, Apple devices, gaming consoles
+x86: Intel PCs (and AMD?)
+
+CISC vs RISC?
 ```
