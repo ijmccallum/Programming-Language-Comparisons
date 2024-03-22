@@ -58,12 +58,15 @@ Swift __________(2014) ... (2023)
 
 ### Assembly (Skipping this in further on steps but doing a wee write-up for funsies)
 
-(an) Assembly lamguage -> machine code -> Computer Architecture - all three are fairly tied together.
+(an) Assembly language -> machine code -> Computer Architecture - all three are fairly tied together.
+
+One Assembly instruction refers to a specific operation that the processor can perform. Follows that the processor you're working with determins the operations you can perform. Looks like there are 2 general approaches: CISC - complex individual instructions that do multiple things (memory/arithmetic/logic), and RISC - simple individual instructions.
 
 ```
-ARM: used on many cell phones and embedded systems
-MIPS: IBM CPUs, Apple devices, gaming consoles
+CISC architectures / assembly languages
 x86: Intel PCs (and AMD?)
 
-CISC vs RISC?
+RISC architectures / assembly languages
+ARM: used on many cell phones and embedded systems
+MIPS: IBM CPUs, Apple devices, gaming consoles
 ```
