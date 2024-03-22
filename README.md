@@ -19,30 +19,39 @@ After that: don't know! a few options to look into next could be concurrency/par
 
 (Creation - Release - Last update) 
 ```
-Assembly _______(1947) (not digging in here - bit _too_ deep for me right now)  
-FORTRAN ________(1957) ... (2023)  
+1st Generation: Machine code
+2nd Generation: Assembly languages
+3rd Generation: More machine-independent and programmer-friendly
+4th Generation: Specific to a domain
+5th Generation: Problem-solving using constraints, though looking into a couple they are noted as being written in one of the lower level languages.
+
+Machine Code ___ 1 (    )
+Assembly _______ 2 (1947) (not digging in here - bit _too_ deep for me right now)
+FORTRAN ________ 3 (1957) ... (2023)
+ALGOL __________ 3 (1958)
+COBOL __________ 3 (1959)  
+
 Lisp ___________(1958) (which old one? Common Lisp?)  
-COBOL __________(1959)  
-BASIC __________(1963)  
-Pascal _________(1970)  
+BASIC __________ 3 (1963)  
+Pascal _________ 3 (1970)  
 Prolog _________(1972) ... (2024) (More of a standard for defining logic)
-C ______________(1972) ... (2024)    
+C ______________ 3 (1972) ... (2024)    
 Smalltalk ______(1972)  (Will look at Smalltalk-80 - seems the defacto "Smalltalk". Pure Object Oriented - _everything_ is an object.)
-C++ ____________(1979) ... (2023)  
+C++ ____________ 3 (1979) ... (2023)  
 MATLAB _________(1984) ... (2023)  
-Perl ___________(1987) ... (2023)  
-Python _________(1991) ... (2024)  
+Perl ___________ 3 (1987) ... (2023)  
+Python _________ 3 (1991) ... (2024)  
 Erlang _________(1986) ... (2024)  
 Haskell ________(1990) ... (2024)  
 Visual Basic ___(1991) ... (2019)  
-R ______________(1992) ... (2024)        
+R ______________ 4 (1992) ... (2024)        
 Ruby ___________(1993) ... (2023)      
-PHP ____________(1994) ... (2023)    
-Java ___________(1995) ... (2024)  
+PHP ____________ 3 (1994) ... (2023)    
+Java ___________ 3 (1995) ... (2024)  
 JavaScript _____(1995) ... (2023)  
 Racket (Lisp) __(1995) ... (2023)  (A language for exploring and defining languages)
 OCaml __________(1996) ... (2023)  
-C# _____________(2000) ... (2023)  
+C# _____________ 3 (2000) ... (2023)  
 Scala __________(2001) ... (2024)  
 Groovy _________(2003) ... (2024)  
 F# _____________(2005) ... (2023)  
@@ -70,3 +79,7 @@ RISC architectures / assembly languages
 ARM: used on many cell phones and embedded systems
 MIPS: IBM CPUs, Apple devices, gaming consoles
 ```
+
+Maybe one day I'll come back and dig through some assembly instructions. But for now - onwards to the next language!
+
+### FORTRAN 
