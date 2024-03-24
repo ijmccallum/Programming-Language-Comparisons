@@ -27,16 +27,16 @@ After that: don't know! a few options to look into next could be concurrency/par
 
 Machine Code ___ 1 (    )
 Assembly _______ 2 (1947) (not digging in here - bit _too_ deep for me right now)
-FORTRAN ________ 3 (1957) ... (2023)
+
 ALGOL __________ 3 (1958)
 COBOL __________ 3 (1959)  
-
-Lisp ___________(1958) (which old one? Common Lisp?)  
+Lisp ___________(1958) (which old one? Common Lisp?)
 BASIC __________ 3 (1963)  
 Pascal _________ 3 (1970)  
 Prolog _________(1972) ... (2024) (More of a standard for defining logic)
 C ______________ 3 (1972) ... (2024)    
 Smalltalk ______(1972)  (Will look at Smalltalk-80 - seems the defacto "Smalltalk". Pure Object Oriented - _everything_ is an object.)
+FORTRAN 77 _____ 3 (1977) 
 C++ ____________ 3 (1979) ... (2023)  
 MATLAB _________(1984) ... (2023)  
 Perl ___________ 3 (1987) ... (2023)  
@@ -69,17 +69,28 @@ Swift __________(2014) ... (2023)
 
 (an) Assembly language -> machine code -> Computer Architecture - all three are fairly tied together.
 
-One Assembly instruction refers to a specific operation that the processor can perform. Follows that the processor you're working with determins the operations you can perform. Looks like there are 2 general approaches: CISC - complex individual instructions that do multiple things (memory/arithmetic/logic), and RISC - simple individual instructions.
+One Assembly instruction refers to a specific operation that the processor can perform. Follows that the processor you're working with determines the operations you can perform. Looks like there are 2 general approaches: CISC - complex individual instructions that do multiple things (memory/arithmetic/logic), and RISC - simple individual instructions.
 
 ```
-CISC architectures / assembly languages
+CISC architectures/assembly languages
 x86: Intel PCs (and AMD?)
 
-RISC architectures / assembly languages
+RISC architectures/assembly languages
 ARM: used on many cell phones and embedded systems
 MIPS: IBM CPUs, Apple devices, gaming consoles
 ```
 
 Maybe one day I'll come back and dig through some assembly instructions. But for now - onwards to the next language!
 
-### FORTRAN 
+### FORTRAN 77
+
+FORTRAN was created when punch cards were in use. Modern versions are still popular today. A rough timeline appears to go along the lines of:
+
+1953: FORTRAN proposed as a more practical alternative to assembly
+1957: FORTRAN "Released"? Published?
+1958: FORTRAN II - added subroutines amoung other things (III added inline assembly)
+1962: FORTRAN IV - the first version standardized by ANSI/ISO
+1966: FORTRAN 66 standard named, essentially IV
+1977: FORTRAN 77 update to the standard. Further updates to the standard were delayed until 90 making 77 the more historically significant version - so going with that to get a taste! 
+
+
