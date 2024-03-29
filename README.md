@@ -23,16 +23,18 @@ After that: don't know! a few options to look into next could be concurrency/par
 2nd Generation: Assembly languages
 3rd Generation: More machine-independent and programmer-friendly
 4th Generation: Specific to a domain
-5th Generation: Problem-solving using constraints, though looking into a couple they are noted as being written in one of the lower level languages.
+5th Generation: Problem-solving using constraints, though looking into a couple they are noted as being written in one of the lower-level languages.
 
 Machine Code ___ 1 (    )
-Assembly _______ 2 (1947) (not digging in here - bit _too_ deep for me right now)
+Assembly _______ 2 (1947) (not digging in here - a bit _too_ deep for me right now)
 
-Historically significant bunch from the 60s/70s
+A historically significant bunch from the 60s/70s
 ALGOL __________ 3 (1958)
 COBOL __________ 3 (1959)  
 Lisp ___________(1958) (which old one? Common Lisp?)
 FORTRAN 77 _____ 3 (1977)
+
+Backus–Naur form? (a language to define languages... may come back to this) 
 
 BASIC __________ 3 (1963)  
 Pascal _________ 3 (1970)  
@@ -97,4 +99,23 @@ FORTRAN was created when punch cards were in use. Modern versions are still popu
 
 ### ALGOL 60
 
-"Designed by committie where every member tried hard to get their favourite thing in ... lessons learned in hindsight" (computerphile youtube)
+ALGOL 58
+ALGOL 60
+ALGOL 68
+
+"Designed by committee where every member tried hard to get their favorite thing in ... lessons learned in hindsight" (computerphile YouTube)
+
+Intended to avoid some of the problems of FORTRAN (what problems specifically?)
+
+Introduced:
+ - Code Blocks (Begin ... end) (are these subroutines? Functions?)
+ - Nested functions & lexical scope
+
+Wasn't picked up by commercial computing due to a lack of standard I/O - instead it was used to define algorithms.
+
+
+## Concepts of language design
+
+Things like "Lexical Scope", "Code Blocks", 
+
+### Evaluation strategy
