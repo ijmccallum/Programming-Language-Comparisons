@@ -118,4 +118,41 @@ Wasn't picked up by commercial computing due to a lack of standard I/O - instead
 
 Things like "Lexical Scope", "Code Blocks", 
 
-### Evaluation strategy
+### Evaluation strategy - parameter-passing strategy
+
+_pass-by-... and call-by-... appear to be the same thing. Going with pass-by... as it makes more sense to me._
+
+- pass-by-value - "only" the value is passed in, editing the value in the called function won't change it in the caller. Usually done by copying the value to a new location in memory. Sets up a functional-like ability, but for functional languages where values are immutable pass-by-reference achieves the same thing.
+- pass-by-reference - the caller passes the reference (a note of where the value/structure is held in memory). Modifications (to the object, or a reassignment of the object) are therefore visible to the caller. More efficient, but harder for programmers to avoid subtle bugs.
+- pass-by-sharing - a memory location is passed as in pass-by-reference. Called functions can edit the object at that memory location. But, they cannot change where the ref points.
+
+Pass-by-reference vs Pass-by-sharing (because the difference here seems pretty subtle!)
+
+
+```python
+def modify_data(lst):
+    lst.append(4)  # Change the values in the given memory location
+
+def reassign_ref(ref):
+    ref = [4, 5, 6]  # Change where the reference points
+
+
+my_list = [1, 2, 3]
+
+modify_data(my_list)
+print(my_list)  # Output: [1, 2, 3, 4]
+
+reassign_ref(my_list)
+print(my_list)  # Output: [1, 2, 3]
+
+
+```
+
+
+- pass-by-name
+- pass-by-copy-restore
+- pass-by-unification
+- pass-by-need
+- pass-by-reference-parameters
+- pass-by-reference-to-const
+  
