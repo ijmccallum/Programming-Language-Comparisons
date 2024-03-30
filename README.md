@@ -15,6 +15,10 @@ To start: for each of the top n languages (popular/important/historic):
 
 After that: don't know! a few options to look into next could be concurrency/parallelism, memory management, error handling, performance, readability, or ecosystem (tooling/community/devX).
 
+## Structure of this repo / the contents!
+
+- `./concepts of language design.md` The fundamental attributes I'll attempt to compare across the various languages.
+
 **First things first - which languages!**
 
 (Creation - Release - Last update) 
@@ -113,76 +117,4 @@ Introduced:
 
 Wasn't picked up by commercial computing due to a lack of standard I/O - instead it was used to define algorithms.
 
-
-## Concepts of language design
-
-Things like "Lexical Scope", "Code Blocks", 
-
-### Evaluation strategy - parameter-passing strategy
-
-_pass-by-... and call-by-... appear to be the same thing. Going with pass-by... as it makes more sense to me._
-
-- pass-by-value - "only" the value is passed in, editing the value in the called function won't change it in the caller. Usually done by copying the value to a new location in memory. Sets up a functional-like ability, but for functional languages where values are immutable pass-by-reference achieves the same thing.
-- pass-by-reference - the caller passes the reference (a note of where the value/structure is held in memory). Modifications (to the object, or a reassignment of the object) are therefore visible to the caller. More efficient, but harder for programmers to avoid subtle bugs.
-- pass-by-sharing - a memory location is passed as in pass-by-reference. Called functions can edit the object at that memory location. But, they cannot change where the ref points.
-
-**Pass-by-reference vs Pass-by-sharing (because the difference here seems pretty subtle!)**
-
-Python is pass-by-sharing (as are Javascript, ...)
-
-```python
-# I'm going to pass this list and in one case change the Data, in the other I'll change the Reference.
-my_thing = [1, 2, 3]
-
-def modify_value(ref):
-    ref.append(4)  # Change the values in the given memory location
-
-def modify_reference(ref):
-    ref = [4, 5, 6]  # Change where the reference points
-
-modify_value(my_thing)
-print(my_thing)  # Output: [1, 2, 3, 4] - the data was changed!
-
-modify_reference(my_thing)
-print(my_thing)  # Output: [1, 2, 3] - the reference did not change
-```
-
-C++ allows a few options for passing parameters:
-
-```cpp
-#include <iostream>
-
-void modifyValue(int x) {
-    x = 2;
-}
-void modifyReference(int &x) {
-    x = 3;
-}
-void modifyPointer(int *x) {
-    *x = 4;
-}
-
-int main() {
-    int myValue = 1;
-
-    modifyValue(myValue);
-    std::cout << myValue << std::endl; // Output: 1 (main scope wasn't changed)
-
-    modifyReference(myValue);
-    std::cout << myValue << std::endl; // Output: 3 (main scope WAS changed)
-
-    modifyPointer(&myValue);
-    std::cout << myValue << std::endl; // Output: 4 (main scope WAS changed)
-
-    return 0;
-}
-
-```
-
-- pass-by-name
-- pass-by-copy-restore
-- pass-by-unification
-- pass-by-need
-- pass-by-reference-parameters
-- pass-by-reference-to-const
   
