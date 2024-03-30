@@ -149,26 +149,31 @@ print(my_thing)  # Output: [1, 2, 3] - the reference did not change
 
 C++ is pass-by-reference, (as are PHP, ...)
 
-TODO: Run and check
-
 ```cpp
 #include <iostream>
 
 void modifyValue(int x) {
-    x = 100;
+    x = 2;
 }
 void modifyReference(int &x) {
-    x = 100;
+    x = 3;
+}
+void modifyPointer(int *x) {
+    *x = 4;
 }
 
 int main() {
-    int myValue = 42;
+    int myValue = 1;
 
     modifyValue(myValue);
-    std::cout << myValue << std::endl; // Output: 42
-    modifyReference(myValue);
+    std::cout << myValue << std::endl; // Output: 1 (main scope wasn't changed)
 
-    std::cout << myValue << std::endl; // Output: 100
+    modifyReference(myValue);
+    std::cout << myValue << std::endl; // Output: 3 (main scope WAS changed)
+
+    modifyPointer(&myValue);
+    std::cout << myValue << std::endl; // Output: 4 (main scope WAS changed)
+
     return 0;
 }
 
