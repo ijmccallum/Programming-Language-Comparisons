@@ -147,7 +147,7 @@ modify_reference(my_thing)
 print(my_thing)  # Output: [1, 2, 3] - the reference did not change
 ```
 
-C++ is pass-by-reference, (as are PHP, ...)
+C++ allows a few options for passing parameters:
 
 ```cpp
 #include <iostream>
