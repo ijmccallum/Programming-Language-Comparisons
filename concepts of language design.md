@@ -11,18 +11,18 @@ _pass-by-... and call-by-... are the same thing. Going with pass-by... as it mak
 
 - **pass-by-value** - "only" the value is passed in, editing the value in the called function won't change it in the caller. Usually done by copying the value to a new location in memory. Sets up a functional-like ability, but for functional languages where values are immutable pass-by-reference achieves the same thing.
 - **pass-by-reference** - the caller passes the reference (a note of where the value/structure is held in memory). Modifications (to the object, or a reassignment of the object) are therefore visible to the caller. More efficient, but harder for programmers to avoid subtle bugs.
-- **pass-by-sharing** - a memory location is passed as in pass-by-reference. Called functions can edit the object at that memory location. But, they cannot change where the ref points.
-- **pass-by-assignment** - a memory location is passed as in pass-by-reference. Called functions can edit the object at that memory location. If reassigned, a new instance of the thing is created.
-- **pass-by-name**
-- **pass-by-copy-restore** - in the called function the value is copied, modifications are not visible outside it. Once the function returns, the final value is copied back into the original memory location from the caller scope. Acts _like_ pass-by-reference except when multiple functions running with the same argument both modify it before either return - neither will see the updates from the other. Only issue is not knowing which will return first.
+- **pass-by-sharing** - (for a specific type of value ("Reference", "Boxed Type", "Object")) a memory location is passed as in pass-by-reference (primitives passed by value?). Called functions can edit the value at that memory location. But, they cannot change where the ref points.
+- **pass-by-pointer / address** a copy of the memory address is passed in. The called function can edit the data but if the pointer is reassigned that isn't reflected outside the function.
+- **pass-by-copy-restore** - in the called function the value is copied, modifications are not visible outside it. Once the function returns, the final value is copied back into the original memory location from the caller scope. Acts _like_ pass-by-reference except when multiple functions running with the same argument both modify it before either return - neither will see the updates from the other. Only issue is not knowing which will return first. (Apparently, interest in this is picking up for Remote Procedure Calls as it allows us to drop a lot of cross-process coms!)
 - **pass-by-unification**
-- **pass-by-need** - don't figure out what the value passed is until it's needed?
+- **pass-by-name** - don't figure out what the value passed is until it's needed?
+- **pass-by-need** - don't figure out what the value passed is until it's needed? but memoised.
 - **pass-by-reference-parameters**
 - **pass-by-reference-to-const**
 
-  **Pass-by-reference vs Pass-by-sharing (because the difference here seems pretty subtle!)**
+Table view of languages and which approach they allow?
 
-Python is pass-by-sharing (as are Javascript, ...)
+  **Pass-by-reference vs Pass-by-sharing (because the difference here seems pretty subtle!)**
 
 ```python
 # I'm going to pass this list and in one case change the Data, in the other I'll change the Reference.
