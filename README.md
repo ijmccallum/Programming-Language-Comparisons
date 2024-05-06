@@ -22,7 +22,7 @@ After that: don't know! a few options to look into next could be concurrency/par
 - TODO 🟥
 
 
-# Which Programming Languages
+# Which Programming Languages 🔄
 
 ## List of languages 🔄
 
@@ -127,12 +127,12 @@ More of a standard for defining logic
 
 Smalltalk-80 seems the defacto "Smalltalk". Pure Object Oriented - _everything_ is an object.
 
-# Concepts of Language Design
+# Concepts of Language Design 🔄
 
 
 Things like "Lexical Scope", "Code Blocks" - the various things I'll be attempting to compare across various languages.
 
-## Evaluation strategy / parameter-passing strategy
+## Evaluation strategy / parameter-passing strategy 🔄
 
 Given a function that takes one (or some) parameter(s), _how_ are those params passed? Is it a value that becomes independent from the place it was called? Is it a reference to a location in memory where the value is stored? How else might this work? Turns out there are a bunch of ways to do this - way more than I expected!
 
@@ -202,7 +202,7 @@ int main() {
 
 ```
 
-# Comparisons!
+# Comparisons! 🔄
 
 ## IF Statement 🟥
 
