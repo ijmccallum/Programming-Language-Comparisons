@@ -1,50 +1,52 @@
-# Programming-Language-Comparisons
+## Programming-Language-Comparisons
+
 Fun wee side project to see if anything interesting pops up from looking at a bunch of different programming languages
 
-## Why - what's the value?
+### Why - What's the Value?
 
 I'm a ~~Javascript~~ Typescript guy with a light-touch smattering of experiences in other languages, but nothing nearing the in-depth comprehension I have of JS. _I ~~need~~ want more knowledge!_
 
-## How - what's the plan?
+### How - What's the Plan?
 
 To start: for each of the top n languages (popular/important/historic):
- - Do a teeny write-up to give context around what the language is intended for.
- - Map out how the fundamentals are done:
-   - data handling (variables, types, scope)
-   - instructions (loops, branches, functions)
+
+- Do a teeny write-up to give context around what the language is intended for.
+- Map out how the fundamentals are done:
+  - data handling (variables, types, scope)
+  - instructions (loops, branches, functions)
 - With them mapped out, for each specific thing I'm looking at, group the languages together so we can see common patterns and maybe dig into some oddball cases.
 
 After that: don't know! a few options to look into next could be concurrency/parallelism, memory management, error handling, performance, readability, or ecosystem (tooling/community/devX).
 
-## Keeping Track  ✅ 🔄 🟥
-- Done ✅  (At least as far as I'm concerned for now)
-- In Progress 🔄 
+### Keeping Track ✅ 🔄 🟥
+
+- Done ✅ (At least as far as I'm concerned for now)
+- In Progress 🔄
 - TODO 🟥
 
+## Which Programming Languages 🔄
 
-# Which Programming Languages 🔄
-
-## List of languages 🔄
+### List of Languages 🔄
 
 Work in Progress list - many of these have multiple versions that differ significantly. As I dig into each I'll pick the version that appears to be the most historically significant.
 
 Below I'm including the language "version" name and the date that version went "live".
 
-```  
+```
   Listing these 2 for context only... for now
 Machine Code ___(    )
 Assembly _______(1947)
 
   A historically significant bunch from the 60s/70s
 ALGOL __________(1958)
-COBOL __________(1959)  
+COBOL __________(1959)
 Lisp ___________(1958)
 FORTRAN 77 _____(1977)
 
-Backus–Naur form? (a language to define languages... may come back to this) 
+Backus–Naur form? (a language to define languages... may come back to this)
 
-BASIC __________(1963)  
-Pascal _________(1970)  
+BASIC __________(1963)
+Pascal _________(1970)
 Prolog _________(1972)
 C ______________(1972)
 Smalltalk-80 ___(1972)
@@ -74,8 +76,7 @@ Elixir _________(2012)
 Swift __________(2014)
 ```
 
-
-## Assembly (Skipping this in further on steps but doing a wee write-up for fun)  ✅ 
+### Assembly (Skipping This in Further on Steps but Doing a Wee Write-up for fun) ✅
 
 (an) Assembly language -> machine code -> Computer Architecture - all three are fairly tied together.
 
@@ -92,7 +93,7 @@ MIPS: IBM CPUs, Apple devices, gaming consoles
 
 Maybe one day I'll come back and dig through some assembly instructions. But for now - onwards to the next language!
 
-## FORTRAN 77 🔄
+### FORTRAN 77 🔄
 
 FORTRAN was created when punch cards were in use. Modern versions are still popular today. A rough timeline appears to go along the lines of:
 
@@ -101,12 +102,12 @@ FORTRAN was created when punch cards were in use. Modern versions are still popu
 1958: FORTRAN II - added subroutines among other things (III added inline assembly)  
 1962: FORTRAN IV - the first version standardized by ANSI/ISO  
 1966: FORTRAN 66 standard named, essentially IV  
-1977: FORTRAN 77 update to the standard. Further updates to the standard were delayed until 90 making 77 the more historically significant version - so going with that to get a taste!   
+1977: FORTRAN 77 update to the standard. Further updates to the standard were delayed until 90 making 77 the more historically significant version - so going with that to get a taste!
 
-## ALGOL 60 🔄
+### ALGOL 60 🔄
 
-ALGOL 58
-ALGOL 60
+ALGOL 58  
+ALGOL 60  
 ALGOL 68
 
 "Designed by committee where every member tried hard to get their favorite thing in ... lessons learned in hindsight" (computerphile YouTube)
@@ -114,25 +115,25 @@ ALGOL 68
 Intended to avoid some of the problems of FORTRAN (what problems specifically?)
 
 Introduced:
- - Code Blocks (Begin ... end) (are these subroutines? Functions?)
- - Nested functions & lexical scope
+
+- Code Blocks (Begin ... end) (are these subroutines? Functions?)
+- Nested functions & lexical scope
 
 Wasn't picked up by commercial computing due to a lack of standard I/O - instead it was used to define algorithms.
 
-
-## Prolog 🔄
+### Prolog 🔄
 
 More of a standard for defining logic
-## Smalltalk-80 🔄
+
+### Smalltalk-80 🔄
 
 Smalltalk-80 seems the defacto "Smalltalk". Pure Object Oriented - _everything_ is an object.
 
-# Concepts of Language Design 🔄
-
+## Concepts of Language Design 🔄
 
 Things like "Lexical Scope", "Code Blocks" - the various things I'll be attempting to compare across various languages.
 
-## Evaluation strategy / parameter-passing strategy 🔄
+### Evaluation Strategy / Parameter-passing Strategy 🔄
 
 Given a function that takes one (or some) parameter(s), _how_ are those params passed? Is it a value that becomes independent from the place it was called? Is it a reference to a location in memory where the value is stored? How else might this work? Turns out there are a bunch of ways to do this - way more than I expected!
 
@@ -151,7 +152,7 @@ _pass-by-... and call-by-... are the same thing. Going with pass-by... as it mak
 
 Table view of languages and which approach they allow?
 
-  **Pass-by-reference vs Pass-by-sharing (because the difference here seems pretty subtle!)**
+**Pass-by-reference vs Pass-by-sharing (because the difference here seems pretty subtle!)**
 
 ```python
 # I'm going to pass this list and in one case change the Data, in the other I'll change the Reference.
@@ -202,45 +203,44 @@ int main() {
 
 ```
 
-# Comparisons! 🔄
+## Comparisons! 🔄
 
-## IF Statement 🟥
+### IF Statement 🟥
 
+### IF Expression 🔄
 
-## IF Expression 🔄
-
-ALGOL: `Z := if X = Y then P else Q `
-COBOL 
-Lisp
-FORTRAN 77
-BASIC
-Pascal
-Prolog
-C
-Smalltalk-80
-C++
-MATLAB
-Perl
-Python
-Erlang
-Haskell
-Visual Basic
-R
-Ruby
-PHP
-Java
-JavaScript
-Racket (Lisp)
-OCaml
-C#
-Scala
-Groovy
-F#
-Clojure
-Rust
+ALGOL: `Z := if X = Y then P else Q `  
+COBOL  
+Lisp  
+FORTRAN 77  
+BASIC  
+Pascal  
+Prolog  
+C  
+Smalltalk-80  
+C++  
+MATLAB  
+Perl  
+Python  
+Erlang  
+Haskell  
+Visual Basic  
+R  
+Ruby  
+PHP  
+Java  
+JavaScript  
+Racket (Lisp)  
+OCaml  
+C#  
+Scala  
+Groovy  
+F#  
+Clojure  
+Rust  
 Go
 
-### Julia 
+#### Julia
 
 ```Julia
 score = 100
@@ -252,24 +252,24 @@ end
 println(grade)
 ```
 
-### Elixir
+#### Elixir
 
 ```Elixir
 score = 100
-grade = if score > 80 do 
+grade = if score > 80 do
   "Pass"
-else 
+else
   "Fail"
 end
 IO.puts(grade)
 ```
 
+#### Swift 🔄 (not Got it Running Anywhere yet)
 
-### Swift 🔄 (not got it running anywhere yet)
 ```swift
 let score = 100
-let grade: = if score > 80 { "Pass" } else { "Fail" } 
+let grade: = if score > 80 { "Pass" } else { "Fail" }
 print(grade)
 ```
 
-## IF Ternary 🟥
+### IF Ternary 🟥
